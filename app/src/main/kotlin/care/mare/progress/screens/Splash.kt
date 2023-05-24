@@ -24,9 +24,6 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun Splash(navController: NavController) {
-//    val context = LocalContext.current
-//    val logoDrawable = context.getDrawable(R.drawable.progress_logo)
-
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -47,7 +44,7 @@ fun Splash(navController: NavController) {
     LaunchedEffect(Unit) {
         coroutineScope.launch {
             delay(2000)
-            navController.navigate("home")
+            navController.navigate("main")
         }
     }
 }

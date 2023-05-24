@@ -15,7 +15,7 @@ fun App() {
         composable("splash_screen") {
             Splash(navController = navController)
         }
-        composable("home") {
+        composable("main") {
             Main()
         }
     }
